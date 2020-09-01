@@ -9,4 +9,6 @@ antigen init ~/.antigenrc
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # Set aliases
-alias l='ls -lh'
+alias l="ls -lh"
+path+=("/mnt/c/Users/Oliver/Local Settings/Programs/Microsoft VS Code/bin")
+path+=("$HOME/.composer/vendor/bin")
