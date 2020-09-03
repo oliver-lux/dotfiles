@@ -13,8 +13,8 @@ call plug#begin('~/nvim/plugged')
 	" Sneak
 	Plug 'justinmk/vim-sneak'
 	" Have the file system follow you around
-  Plug 'airblade/vim-rooter'
-  " Footer
+        Plug 'airblade/vim-rooter'
+        " Footer
 	Plug 'itchyny/lightline.vim'
 	" Git Support
 	Plug 'tpope/vim-fugitive'
@@ -28,6 +28,19 @@ call plug#begin('~/nvim/plugged')
 	" Theme
 	Plug 'joshdick/onedark.vim'
 call plug#end()
+
+" Use 24-bit (true-color) mode in Vim/Neovim when outside tmux.
+if (has("nvim"))
+	let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+endif
+
+if (has("termguicolors"))
+	set termguicolors
+endif
+
+" Set Theme
+colorscheme onedark
+let g:lightline = { 'colorscheme': 'onedark' }
 
 " Auto install missing plugins
 autocmd VimEnter *
