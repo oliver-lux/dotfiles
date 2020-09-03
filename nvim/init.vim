@@ -42,6 +42,8 @@ endif
 colorscheme onedark
 let g:lightline = { 'colorscheme': 'onedark' }
 
+source $HOME/.dotfiles/nvim/plug-config/fzf.vim
+
 " Auto install missing plugins
 autocmd VimEnter *
   \  if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))

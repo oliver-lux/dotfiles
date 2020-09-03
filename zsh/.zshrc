@@ -21,5 +21,12 @@ export FZF_DEFAULT_COMMAND='rg --files --follow --no-ignore-vcs --hidden -g "!{.
 
 alias v='nvim $(fzf)'
 
+FILE=/usr/share/doc/fzf/examples/key-bindings.zsh
+
+[ -f $FILE ] && source $FILE || echo "$FILE does not exist."
+
+FILE=/usr/share/doc/fzf/examples/completion.zsh
+[ -f $FILE ] && source $FILE || echo "$FILE does not exist."
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
