@@ -3,6 +3,8 @@
 mkdir -p bin
 curl -L git.io/antigen > bin/antigen.zsh
 
-ln -sfv ~/.dotfiles/zsh/.zshrc ~
-ln -sfv ~/.dotfiles/zsh/.antigenrc ~
-ln -sfv ~/.dotfiles/zsh/.p10k.zsh ~
+ln -sf ~/.dotfiles/zsh/.zshrc ~
+ln -sf ~/.dotfiles/zsh/.p10k.zsh ~
+
+mkdir -p ~/.config/nvim
+ln -sf ~/.dotfiles/nvim/init.vim ~/.config/nvim/init.vim
