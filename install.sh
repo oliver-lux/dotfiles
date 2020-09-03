@@ -1,7 +1,11 @@
 #!/bin/sh
 
-mkdir -p bin
-curl -L git.io/antigen > bin/antigen.zsh
+mkdir -p ~/bin
+
+if [ ! -f ~/bin/antigen.zsh ]; then
+  echo "Downloading antigen"
+  curl -L git.io/antigen > ~/bin/antigen.zsh
+fi
 
 ln -sf ~/.dotfiles/zsh/.zshrc ~
 ln -sf ~/.dotfiles/zsh/.p10k.zsh ~

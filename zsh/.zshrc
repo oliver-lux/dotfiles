@@ -4,7 +4,7 @@ fi
 
 dotfiles="$HOME/.dotfiles"
 
-source $dotfiles/bin/antigen.zsh
+source ~/bin/antigen.zsh
 antigen init $dotfiles/zsh/.antigenrc
 
 source $dotfiles/zsh/aliases/docker.sh
