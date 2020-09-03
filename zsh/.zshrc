@@ -17,7 +17,7 @@ alias l="ls -lh"
 path+=("/mnt/c/Users/Oliver/Local Settings/Programs/Microsoft VS Code/bin")
 path+=("$HOME/.composer/vendor/bin")
 
-# export FZF_DEFAULT_COMMAND='rg --files --follow --no-ignore-vcs --hidden -g "!{.git/*,node_modules/*,vendor/*}"'
+export FZF_DEFAULT_COMMAND='rg --files --follow --no-ignore-vcs --hidden -g "!{.git/*,node_modules/*,vendor/*}"'
 
 alias v='nvim $(fzf)'
 
